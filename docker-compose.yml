@@ -14,7 +14,7 @@ services:
       - mysql_data:/var/lib/mysql
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
-      - "3306:3306"
+      - "3307:3306"
     networks:
       - maz_network
     healthcheck:
@@ -44,7 +44,7 @@ services:
     volumes:
       - ./backend/uploads:/app/uploads
     ports:
-      - "5000:5000"
+      - "500:5000"
     networks:
       - maz_network
 
